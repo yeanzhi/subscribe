@@ -69,6 +69,6 @@ app.use(function*(){
     this.response.body = yield fs.readFileAsync("."+this.url,"utf-8");
 });
 
-app.listen(3000,function(){
-    console.log("127.0.0.1:3000");
+app.listen(8090,function(){
+    console.log("127.0.0.1:8090");
 });
