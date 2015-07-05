@@ -1,0 +1,68 @@
+html, body, .container{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container{
+    background: url("/src/img/cover.jpg") center no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+#logo,.content,.subscribe{
+    width: 100%;
+    height: auto;
+}
+#logo{
+    margin-top: 7%;
+}
+.content{
+    color: azure;
+    font-family: 'Œ¢»Ì—≈∫⁄';
+    font-size: 20px;
+}
+
+/* ‰»ÎøÚ*/
+
+.spirit_text{
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 1px solid #eae3c9;
+    color:#f0f0f0;
+    font-size: 20px;
+    font-weight: 400;
+    width: 30em;
+    text-align: center;
+}
+/*∞¥≈•*/
+.spirit_btn{
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #eae3c9;
+    color: #eae3c9;
+    display: inline-block;
+    font-family: "Museo Sans W01 700",Helvetica,Arial,sans-serif;
+    font-size: 1.125em;
+    font-style: normal;
+    font-weight: 400;
+    margin: 1.5em 0;
+    padding: 0.65em 1em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.spirit_btn:hover{
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.warning{
+    color: #cccc99;
+    font-family: 'Œ¢»Ì—≈∫⁄';
+    font-size: 24px;
+}
+
+.panel_footer{
+    margin-top: 8em;
+}
+
