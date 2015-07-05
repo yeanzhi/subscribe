@@ -5,8 +5,12 @@
 var db = require("./dbsetting");
 var Sequelize = require("sequelize");
 //สตภýปฏ
-var sequelize = new Sequelize(db.mysql.database,db.mysql.user,db.mysql.password,{
+var sequelize = new Sequelize(
+	db.mysql.database,
+	db.mysql.user,
+	db.mysql.password,{
     host:db.mysql.host,
+    dialect: db.mysql.dialect,
     pool: {
         max: 5,
         min: 0,

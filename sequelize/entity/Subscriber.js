@@ -7,7 +7,9 @@ var sequelize = require("../sequelize");
 
 var Subscriber = sequelize.define('subscriber', {
     id: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        primaryKey: true,
+            autoIncrement: true
     },
     email: {
         type: Sequelize.STRING

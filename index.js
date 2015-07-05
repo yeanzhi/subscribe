@@ -21,12 +21,13 @@ app.use(router.get('/subscribe/:email', function *(email) {
         //此前取消订阅, 则重新激活
         if(theone[0].status == 0) {
             var result = yield Subscriber.reSubscribeByEmail(email);
-            if(result>0) {
-                this.body = "重新订阅成功";
-            }
-            else{
-                this.body = "Error";
-            }
+            // if(result>0) {
+            //     this.body = "重新订阅成功";
+            // }
+            // else{
+            //     this.body = "Error";
+            // }
+            this.body = "订阅成功";
         }
         else{
             this.body = "此邮箱已经订阅";
@@ -34,12 +35,13 @@ app.use(router.get('/subscribe/:email', function *(email) {
     }
     else{
         var result = yield Subscriber.createSubscriber(email);
-        if(result.length>0) {
-            this.body = "订阅成功";
-        }
-        else{
-            this.body = "Error";
-        }
+        // if(result.length>0) {
+        //     this.body = "订阅成功";
+        // }
+        // else{
+        //     this.body = "Error";
+        // }
+        this.body = "订阅成功";
     }
 }));
 
